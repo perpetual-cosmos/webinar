@@ -1,0 +1,210 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation */
+  .navbar {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e73be;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .nav-links li {
+    margin-left: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #1e73be;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?coding,computer') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* Offset for fixed nav */
+  }
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 115, 190, 0.7);
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 800px;
+  }
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+  .hero-content .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+  }
+  .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+  }
+  .hero-btn:hover {
+    background-color: #1ebc57;
+    transform: scale(1.03);
+  }
+  .btn-icon {
+    margin-right: 10px;
+  }
+  .whatsapp-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .webinar-info {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  /* Sub-Hero for Inner Pages */
+  .sub-hero {
+    background-color: #1e73be;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .sub-hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #fff;
+    margin: 40px 0;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+  .card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e73be;
+    border-bottom: 3px solid #1e73be;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  .card ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  /* Benefits List */
+  .benefits-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e73be;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.8rem;
+    }
+    .hero-content .tagline {
+      font-size: 1.3rem;
+    }
+    .nav-container {
+      flex-direction: column;
+      height: auto;
+    }
+    .nav-links {
+      margin-top: 10px;
+    }
+  }
+  
