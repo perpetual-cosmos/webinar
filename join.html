@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Join - ScribbleCode Webinar</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScribbleCode Webinar - Home</title>
+  <link rel="stylesheet" href="styles.css" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="height: 100vh;">
+<body>
   <!-- Fixed Navigation -->
   <nav class="navbar">
     <div class="container nav-container">
       <div class="logo">ScribbleCode</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" >Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="benefits.html">Benefits</a></li>
         <li><a href="join.html" class="active">Join</a></li>
       </ul>
     </div>
   </nav>
-  <!-- Sub-Hero Section -->
-  <header class="sub-hero">
-    <div class="container">
-      <h1>Join the Webinar</h1>
-    </div>
-  </header>
-  <!-- Main Content -->
-  <main class="container">
-    <section class="card join-card">
-      <p>
-        Ready to take the next step in your coding journey? Click the button below to join our exclusive WhatsApp group and get all the webinar details!
-      </p>
-      <a href="https://chat.whatsapp.com/DvHCSUvDZC6Arga3P5e4Ur" class="btn hero-btn" target="_blank">
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Unlock Your Coding Potential</h1>
+      <p class="tagline">A free webinar designed to help you overcome coding challenges.</p>
+      <a href="join.html" class="btn hero-btn" target="_blank">
         <span class="btn-icon">
           <!-- WhatsApp SVG Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="whatsapp-icon" viewBox="0 0 16 16">
@@ -42,14 +37,28 @@
         </span>
         <span class="btn-text">Join WhatsApp Group</span>
       </a>
-    </section>
-  </main>
+      <p class="webinar-info">Free Webinar • 9 PM • 6 March 2025</p>
+    </div>
+  </header>
+
+  <!-- Webinar Details Section -->
+  <section class="card container webinar-details" style="margin-left: 5%;">
+    <h2>Webinar Overview</h2>
+    <p>
+      Our one-month crash course is designed specifically for beginners and final-year students—especially from Tier 3 colleges—who feel overwhelmed by coding concepts. We provide a judgment-free environment where every question is welcome.
+    </p>
+    <p>
+      The course features live resume review sessions, doubt-clearing classes, and interactive lessons focused on boosting your confidence. With the right guidance, you'll not only grasp the fundamentals but also get ready for placement opportunities.
+    </p>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2024 ScribbleCode Webinar. All rights reserved.</p>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
